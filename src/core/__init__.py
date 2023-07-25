@@ -1,4 +1,5 @@
 from .device import Device
+from .network import Network
 
 from config import AdapterConfig
 from common import Framework

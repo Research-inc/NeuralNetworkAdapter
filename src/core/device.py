@@ -2,7 +2,6 @@ from common import *
 from config import *
 
 
-
 class Device:
 
 	_device = None

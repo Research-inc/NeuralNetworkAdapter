@@ -12,3 +12,12 @@ device = (
     else "cpu"
 )
 print(f"Using {device} device")
+
+self.flatten = nn.Flatten()
+        self.linear_relu_stack = nn.Sequential(
+            nn.Linear(28*28, 512),
+            nn.ReLU(),
+            nn.Linear(512, 512),
+            nn.ReLU(),
+            nn.Linear(512, 10),
+        )
