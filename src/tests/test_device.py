@@ -22,4 +22,4 @@ def testTensorflow():
 
 
 
-testPytorch()
+testTensorflow()
