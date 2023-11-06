@@ -13,7 +13,9 @@ jobs:
       - name: Installing packages
         run: pip install tensorflow
       - name: Running Tests.
-        run: ls
+        run: |
+          cd src/tests
+          pwd
   PyTorch:
     runs-on: ubuntu-latest
     
