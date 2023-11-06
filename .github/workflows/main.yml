@@ -11,7 +11,7 @@ jobs:
       - name: Configuring Environment
         run: pwd
       - name: Installing packages
-        run: ls -l
+        run: pip install tensorflow
       - name: Running Tests.
         run: ls
   PyTorch:
@@ -19,9 +19,9 @@ jobs:
     
     steps:
       - name: Configuring Environment
-        run: ls
+        run: pwd
       - name: Installing packages
-        run: ls
+        run: pip install torch
       - name: Running Tests.
         run: ls
     
