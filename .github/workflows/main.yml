@@ -5,8 +5,7 @@ on:
 
 jobs:
   Tensorflow:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest    
     steps:
       - name: Configuring Environment
         run: |
@@ -21,16 +20,26 @@ jobs:
           pwd
       - name: Running Test Neural Network
         run: |
+          cd NeuralNetworkAdapter/src/tests
+          python3 test_neural_network.py
           pwd
           
   PyTorch:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest   
     steps:
       - name: Configuring Environment
-        run: pwd
+        run: |
+          pwd
+          git clone https://github.com/Research-inc/NeuralNetworkAdapter.git
       - name: Installing packages
         run: pip install torch
-      - name: Running Tests.
-        run: ls
-    
+      - name: Running Test Device
+        run: |
+          cd NeuralNetworkAdapter/src/tests
+          python3 test_device.py
+          pwd
+      - name: Running Test Neural Network
+        run: |
+          cd NeuralNetworkAdapter/src/tests
+          python3 test_neural_network.py
+          pwd
