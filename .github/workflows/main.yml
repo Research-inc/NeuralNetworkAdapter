@@ -16,7 +16,7 @@ jobs:
         run: pip install tensorflow
       - name: Running Tests.
         run: |
-          cd src/tests
+          cd NeuralNetworkAdapter/src/tests
           pwd
   PyTorch:
     runs-on: ubuntu-latest
