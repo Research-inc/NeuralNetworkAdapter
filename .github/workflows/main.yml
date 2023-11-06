@@ -9,13 +9,19 @@ jobs:
     
     steps:
       - name: Configuring Environment
+        run: pwd
       - name: Installing packages
+        run: ls -l
       - name: Running Tests.
+        run: ls
   PyTorch:
     runs-on: ubuntu-latest
     
     steps:
       - name: Configuring Environment
+        run: ls
       - name: Installing packages
+        run: ls
       - name: Running Tests.
+        run: ls
     
