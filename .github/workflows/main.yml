@@ -9,7 +9,9 @@ jobs:
     
     steps:
       - name: Configuring Environment
-        run: pwd
+        run: |
+          pwd
+          git clone https://github.com/Research-inc/NeuralNetworkAdapter.git
       - name: Installing packages
         run: pip install tensorflow
       - name: Running Tests.
