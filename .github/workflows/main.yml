@@ -2,3 +2,20 @@ on:
   push:
     branches:
     - develop
+
+jobs:
+  Tensorflow:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Configuring Environment
+      - name: Installing packages
+      - name: Running Tests.
+  PyTorch:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Configuring Environment
+      - name: Installing packages
+      - name: Running Tests.
+    
