@@ -21,5 +21,5 @@ def testTensorflow():
 	print("Is GPU Available: ", obj.isGPUAvailable())
 
 
-
-testTensorflow()
+testPytorch()
+##testTensorflow()

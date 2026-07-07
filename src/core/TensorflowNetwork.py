@@ -16,8 +16,7 @@ class TensorflowNetwork():
 			if "nested" in outer_layer:			
 				for inner_layer in outer_layer["nested"]:
 					if inner_layer['layer'] == 'linear':
-						inner_layers.append(tf.keras.layers.Dense(inner_layer["in_features"], activation='linear'))
-						#inner_layers.append(nn.Linear(inner_layer["in_features"], inner_layer["out_features"]))
+						inner_layers.append(tf.keras.layers.Dense(inner_layer["in_features"], activation='linear'))						
 					elif inner_layer['layer']=='relu' :
 						inner_layers.append(tf.keras.layers.ReLU())		
 
